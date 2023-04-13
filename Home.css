@@ -1,0 +1,82 @@
+.Copyright {
+    font-size: 1rem;
+    margin-bottom: 0px;
+    color: white;
+}
+body {
+    padding-top: 80px;
+    font-family: "Cairo", sans-serif;
+    background-color: #282A35;
+}
+#welcome {
+    margin-left: 100px;
+    color: white;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background-color: rgb(12, 26, 133);  */
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+}
+nav ul {
+    float: right;
+    margin-right: 30px;
+    overflow: hidden;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0;
+}
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    text-decoration-line: none;
+    font-size: 20px;
+    padding: 5px 25px;
+}
+a:hover {
+    background-color: #1a8d76;
+    color: white;
+    border: 1px solid black;
+}
+.logo {
+    position: fixed;
+    height: auto;
+    left: 20px;
+    width: 100px;
+    max-height: 80px;
+}
+body input[type=search] {
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 30px;
+    border-width: 2px;
+}
+#sub {
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+#sub:hover{
+    background-color: #1a8d76;
+    border: 1px solid black;
+    color: white;
+}
+.block {
+    background-color: white;
+    border: 1px solid black;
+    display: block;
+    padding: 10px;
+    margin: 20px 7%;
+    font-size: larger;
+}
+.block:hover{
+    background-color: #32b399;
+}

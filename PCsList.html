@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>View list of PCs</title>
+        <link rel="stylesheet" href="PCsList.css">
+        <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+              <a href="Projects.html"><img src="/images/logo.png" class="logo"></a>
+              <div class="container"><a href="#"></a>
+                <ul>
+                  <li><a href="Home.html">Home</a></li>
+                  <li><a href="add a new lab.html">add new lab</a>
+                  <li><a href="update existing lab.html"> update & delete</a></li>
+                  <li><a href="PCsList.html">PCsList</a></li>
+                  <li><a href="addPC.html"> Add PC</a></li>
+                  <li><input title="search" type="search" placeholder="search for lab">
+                    <button title="search"
+                      onclick="window.location.href='search.html';" id="sub">search </button></li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+        <h1>A list of PCs that need repair</h1>
+        <table class="pcs-list">
+            <tr>
+                <th>PC ID</th>
+                <th>PC problem</th>
+                <th>Laboratory Name</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>software problem</td>
+                <td>Web Technology Lab</td>
+                <td id="status1">Not Repaired</td>
+                <td><button class="button" onclick="changeStatus('status1')">Change Status</button></td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td >software problem</td>
+                <td>Database System Lab</td>
+                <td id="status2">Not Repaired</td>
+                <td><button class="button" onclick="changeStatus('status2')">Change Status</button></td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>sowftware problem</td>
+                <td>Software Engineering Lab</td>
+                <td id="status3">Not Repaired</td>
+                <td><button class="button" onclick="changeStatus('status3')">Change Status</button></td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>sowftware problem</td>
+                <td>Data Structure Lab</td>
+                <td id="status4">Not Repaired</td>
+                <td><button class="button" onclick="changeStatus('status4')">Change Status</button></td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>sowftware problem</td>
+                <td>Object Oriented Programming Lab</td>
+                <td id="status5">Not Repaired</td>
+                <td><button class="button" onclick="changeStatus('status5')">Change Status</button></td>
+            </tr>
+            <tr>
+                <td>06</td>
+                <td>sowftware problem</td>
+                <td>Logic Design Lab</td>
+                <td id="status6">Not Repaired</td>
+                <td><button class="button" onclick="changeStatus('status6')">Change Status</button></td>
+            </tr>
+            <tr>
+                <td>07</td>
+                <td>sowftware problem</td>
+                <td>Computer Networks Technology Lab</td>
+                <td id="status7">Not Repaired</td>
+                <td><button class="button" onclick="changeStatus('status7')">Change Status</button></td>
+            </tr>
+            <tr>
+                <td>08</td>
+                <td>sowftware problem</td>
+                <td>Structured Programming Lab</td>
+                <td id="status8">Not Repaired</td>
+                <td><button class="button" onclick="changeStatus('status8')">Change Status</button></td>
+            </tr>
+        </table>
+        <span class="Copyright">Copyright © 2004-2015 Faculty of Computers and Artificial Intelligence 5 Dr. Ahmed Zewail Street,
+            Postal Code: 12613, Orman, Giza, Egypt.</span>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>laboratory tracking website</title>
+    </head>
+    <body>
+        <nav> 
+            <div class="container"><a href="#"></a>
+              <ul>
+                <li id="home"><a href="Home.html">Home</a></li>
+                <li id="add a new lab"><a href="add a new lab.html">add new lab</a>
+                <li id="update"><a href="update existing lab.html"> update & delete</a></li>
+                <li id="view"><a href="view.html">view</a></li>
+                <li id="add a PC"><a href="addPC.html"> Add PC</a></li>
+                <input title="search" type="search" name="search"><button title="search" onclick="window.location.href='search.html';">search </button>
+              </ul>
+            </div>
+          </nav>
+        <h3>Update Data base lab information </h3>
+        <form>
+            <form action="" method="post">
+            <div>
+                <label>laboratory ID:</label>
+                <input type="text"  autofocus required  placeholder="Enter the ID" value="01"/>
+            </div>
+            <br>
+            <div>
+                <label> Laboratory name:</label>
+                <input type="text" required  placeholder="Enter the name" value="Data Base Lab" name="name"> 
+            </div>
+            <br>
+            <div>
+                
+                <label>Building number:</label> 
+                <input type="number" required min="1"  placeholder="select the Building no." value="8" name="Building">
+            </div>
+            <br>
+            <div>
+                <label>Floor number</label> 
+                <input type="number" required min="1" placeholder="select floor no." value="2" name="floor">
+            </div>
+            <br>
+            <div>
+                <label>Number of Pcs:</label> 
+                <input type="number" required min="0" placeholder="select no. of Pcs" value="2" value="2" name="PCs">
+            </div>
+            <br>
+            <div>
+                <label>Capacity:</label>
+                <input type="number" required min="0" placeholder="select the Capacity"  value="15" name="Capacity">
+            </div>
+            <br>
+            <div>
+                <label>Number of chairs:</label> 
+                <input type="number" required min="0" placeholder="select the no. of chairs" value="20" name="Chairs"> 
+            </div>
+            <hr>
+            <div>
+                <p>Lab status:</p>
+                <input id="active" type="radio" name="status" value="active"  required  checked/>
+                <label for="active">Active</label>
+            </div>
+            <div>
+                <input id="um" type="radio" name="status" value="under maintenance"  required />
+                <label for="um">Under maintenance</label>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Save">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </body>
+</html>

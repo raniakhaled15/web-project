@@ -1,0 +1,107 @@
+<body>
+   <nav> 
+   <div class="container"><a href="#"></a>
+     <ul>
+       <li id="home"><a href="Home.html">Home</a></li>
+       <li id="add a new lab"><a href="add a new lab.html">add new lab</a>
+       <li id="update"><a href="update existing lab.html"> update & delete</a></li>
+       <li id="view"><a href="PCsList.html">view</a></li>
+       <li id="add a PC"><a href="addPC.html"> Add PC</a></li>
+       <input title="search" type="search" name="search"><button title="search" onclick="window.location.href='search.html';">search </button>
+     </ul>
+   </div>
+ </nav>
+</body>
+<input type="text" id="Name" onkeyup="search()" placeholder="Search for a laboratory">
+
+<table id="myTable">
+  <thead>
+    <th style="width:5%;">ID</th>
+    <th style="width:5%;">Name</th>
+    <th style="width:5%;">Building Number</th>
+    <th style="width:5%;">Floor Number</th>
+    <th style="width:5%;">PCs Number</th>
+    <th style="width:5%;">Capacity</th>
+    <th style="width:5%;">Chairs Number</th>
+    <th style="width:5%;">Status</th>
+    <th style="width:5%;">updatig information</th>
+    <th style="width:5%;">delete information</th>
+
+  </thead>
+  <tbody>
+    <tr>
+        <td>01</td>
+        <td>Data Base Lab</td>
+        <td>8</td>
+        <td>2</td>
+        <td>2</td>
+        <td>15</td>
+        <td>20</td>
+        <td>Active</td>
+        <td><button onclick="window.location.href='examples.html';">
+           update</td>
+           <td><button onclick="myFunction()">delete</button></td>
+           <script>
+           function myFunction() {
+              confirm("warning if you continue all the information will be deleted):");
+   }
+          </script>
+   
+    </tr>
+    <tr>
+        <td>02</td>
+        <td>Web Lab</td>
+        <td>5</td>
+        <td>4</td>
+        <td>7</td>
+        <td>11</td>
+        <td>20</td>
+        <td>Active</td>
+        <td><button>update</button></td>
+        <td><button onclick="myFunction()">delete</button></td>
+        <script>
+        function myFunction() {
+           confirm("warning if you continue all the information will be deleted):");
+}
+       </script>
+
+    </tr>
+    <tr>
+        <td>03</td>
+        <td>Management Lab</td>
+        <td>2</td>
+        <td>5</td>
+        <td>2</td>
+        <td>0</td>
+        <td>20</td>
+        <td>Active</td>
+        <td><button>update</button></td>
+        <td><button onclick="myFunction()">delete</button></td>
+        <script>
+        function myFunction() {
+           confirm("warning if you continue all the information will be deleted):");
+}
+       </script>
+
+    </tr>
+    <tr>
+        <td>04</td>
+        <td>Data Structure Lab</td>
+        <td>13</td>
+        <td>7</td>
+        <td>2</td>
+        <td>7</td>
+        <td>20</td>
+        <td>Active</td>
+        <td><button>update</button></td>
+        <td><button onclick="myFunction()">delete</button></td>
+        <script>
+        function myFunction() {
+           confirm("warning if you continue all the information will be deleted):");
+}
+       </script>
+
+      
+    </tr>
+  </tbody>
+</table>

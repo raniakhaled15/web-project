@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add a new PC</title>
+        <link rel="stylesheet" href="addPC.css">
+        <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+    </head>
+
+    <body>
+      <header>
+        <nav class="navbar">
+          <a href="Projects.html"><img src="/images/logo.png" class="logo"></a>
+          <div class="container"><a href="#"></a>
+            <ul>
+              <li><a href="Home.html">Home</a></li>
+              <li><a href="add a new lab.html">add new lab</a>
+              <li><a href="update existing lab.html"> update & delete</a></li>
+              <li><a href="PCsList.html">PCs List</a></li>
+              <li><a href="addPC.html"> Add PC</a></li>
+              <li><input title="search" type="search" placeholder="search for lab">
+                <button title="search"
+                  onclick="window.location.href='search.html';" id="sub">search </button></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+        
+        <form class="add-pc" action="" method="get">
+          <h1>Add a PC to a laboratory</h1>
+            <label for="id">PC ID:</label> <input type="text" name="id" id="id" placeholder="Enter PC ID" required>
+            <label for="lab-id">Laboratory ID:</label> <input type="text" name="lab-id" id="lab-id" placeholder="Enter Lab ID" required>
+            <div>
+              <label>Status</label>
+              <input type="radio" value="active" id="active"><label for="active">Active</label>
+              <input type="radio" value="under-maintenance" id="under-maintenance"><label for="under maintenance">Under maintenance</label>
+            </div>
+            <input type="submit" value="Sumbit" id="submit"> <input type="reset" value="Reset" id="reset">
+        </form>
+        <span class="Copyright">Copyright © 2004-2015 Faculty of Computers and Artificial Intelligence 5 Dr. Ahmed Zewail Street,
+          Postal Code: 12613, Orman, Giza, Egypt.</span>
+    </body>
+</html>

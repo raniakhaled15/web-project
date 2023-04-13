@@ -1,0 +1,69 @@
+.logo {
+    width: 80px;
+    height: 70px;
+    left: 20px;
+}
+
+body {
+    background-color: #282A35;
+    background-image: url(/images/background.jpg);
+    background-size: cover;
+
+}
+*{
+    font-family: "Cairo",sans-serif;
+}
+div {
+    display: inline-block;
+    background-color: white;
+    width: 18%;
+    margin-top: 1%;
+    height: 150px;
+    overflow: hidden;
+    cursor: pointer;
+}
+h2{
+    text-align: center;
+    color: black;
+    font-size: 45px;
+    font-weight: 600;
+    margin: 20px;
+}
+h4 {
+    margin: 0px;
+    font-size: small;
+    font-weight: bolder;
+}
+div:hover{
+   opacity: 50%;
+   border: 3px solid black;
+   
+}
+.Human-resources {
+    margin-left: 30%;
+    margin-right: 1%;
+    margin-top: 30px;
+    background-image: url(/images/Human-resources.jpg);
+    background-size: cover;
+}
+
+.Student-affairs {
+    margin-right: 30%;
+    margin-left: 1%;
+    background-image: url(/images/Student-affairs.png);
+    background-size: cover;
+}
+
+.Higher-studies {
+    margin-left: 30%;
+    margin-right: 1%;
+    background-image: url(/images/Higher-studies.jpg);
+    background-size: cover;
+}
+
+.Laboratory-tracking {
+    margin-right: 30%;
+    margin-left: 1%;
+    background-image: url(/images/Laboratory-tracking.jfif);
+    background-size: cover;
+}
