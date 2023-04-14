@@ -79,14 +79,13 @@ body input[type=search] {
 
 h1 {
     text-align: center;
-    margin: 4px;
 }
 
 .add-pc {
     font-family: "Cairo", sans-serif;
-    width: 40%;
-    padding: 50px;
-    margin:0 26.5%;
+    width: 30%;
+    padding: 70px;
+    margin:0 28% 0 30%;
     background-color: #1a8d76;
 }
 
