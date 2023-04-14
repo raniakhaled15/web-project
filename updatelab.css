@@ -9,10 +9,7 @@ body {
   font-family: "Cairo", sans-serif;
   background-color: #282A35;
 }
-#welcome {
-  margin-left: 100px;
-  color: white;
-}
+
 .navbar {
   position: fixed;
   top: 0;
