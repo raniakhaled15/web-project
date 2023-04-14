@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>laboratory tracking website</title>
+        <link rel="stylesheet" href="AddLab.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Public+Sans:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <header>
+        <nav class="navbar">
+          <a href="Projects.html"><img src="/images/logo.png" class="logo"></a>
+          <div class="container"><a href="#"></a>
+            <ul>
+              <li><a href="Home.html">Home</a></li>
+              <li><a href="AddLab.html">add new lab</a>
+              <li><a href="updateLab.html"> update & delete</a></li>
+              <li><a href="PCsList.html">PCsList</a></li>
+              <li><a href="addPC.html"> Add PC</a></li>
+              <li><input title="search" type="search" placeholder="search for lab">
+                <button title="search"
+                  onclick="window.location.href='search.html';" id="sub">search </button></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+        <div class="container">
+        <form>
+            <form  class="addlab" action="" method="post">
+              <h2 class="my-title">Add new laboratory </h2>
+                <input type="text" class= "nameId"  autofocus required  placeholder=" Lab Name:" name="name"/>
+                <br>
+                <input type="text"  class="nameId"  id="id" required  placeholder=" Lab ID:" name="id"> 
+                <br>
+                <br>
+                <input type="number" class="num1" required min="1"  placeholder= "Building number:" name="Building no.">
+                <input type="number" class="floorNo" id="floor" required min="1" placeholder=" Floor Number:" name="Floor no.">
+                <input type="number" class="num1" required min="0" placeholder=" Number Of Pcs:" name="Number of PCs" >
+                <br>
+                <br>
+                <input type="number" class="num2"  id="cap"required min="0" placeholder=" Capacity:" name="Capacity" >
+                <input type="number" class="chairsNo" required min="0" placeholder="Number of chairs:" name="Number of chairs">
+                <label id="label">Status</label>
+                <input type="radio" name="status" value="active" id="active"><label for="active">Active</label>
+                <input type="radio" name="status" value="under-maintenance" id="under-maintenance"><label for="under maintenance">Under maintenance</label>
+                <br>
+                <input type="submit" value="Save" class="saved">
+                <input type="reset" value="Reset" class="Reset">
+        </form>
+      </div>
+      <span class="Copyright">Copyright © 2004-2015 Faculty of Computers and Artificial Intelligence 5 Dr. Ahmed Zewail Street,
+        Postal Code: 12613, Orman, Giza, Egypt.</span>
+    </body>
+</html> 
