@@ -1,19 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>laboratory tracking website</title>
+        <link rel="stylesheet" href="updatelab.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Public+Sans:wght@100&display=swap" rel="stylesheet">
+    </head>
 <body>
-   <nav> 
-   <div class="container"><a href="#"></a>
-     <ul>
-       <li id="home"><a href="Home.html">Home</a></li>
-       <li id="add a new lab"><a href="add a new lab.html">add new lab</a>
-       <li id="update"><a href="update existing lab.html"> update & delete</a></li>
-       <li id="view"><a href="PCsList.html">view</a></li>
-       <li id="add a PC"><a href="addPC.html"> Add PC</a></li>
-       <input title="search" type="search" name="search"><button title="search" onclick="window.location.href='search.html';">search </button>
-     </ul>
-   </div>
- </nav>
+  <header>
+    <nav class="navbar">
+      <a href="Projects.html"><img src="/images/logo.png" class="logo"></a>
+      <div class="container"><a href="#"></a>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="AddLab.html">add new lab</a>
+          <li><a href="updateLab.html"> update & delete</a></li>
+          <li><a href="PCsList.html">PCsList</a></li>
+          <li><a href="addPC.html"> Add PC</a></li>
+          <li><input title="search" type="search" placeholder="search for lab">
+            <button title="search"
+              onclick="window.location.href='search.html';" id="sub">search </button></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 </body>
-<input type="text" id="Name" onkeyup="search()" placeholder="Search for a laboratory">
-
 <table id="myTable">
   <thead>
     <th style="width:5%;">ID</th>
@@ -38,9 +51,9 @@
         <td>15</td>
         <td>20</td>
         <td>Active</td>
-        <td><button onclick="window.location.href='examples.html';">
+        <td><button class="button" onclick="window.location.href='examples.html';">
            update</td>
-           <td><button onclick="myFunction()">delete</button></td>
+           <td><button class="button" onclick="myFunction()">delete</button></td>
            <script>
            function myFunction() {
               confirm("warning if you continue all the information will be deleted):");
@@ -57,8 +70,8 @@
         <td>11</td>
         <td>20</td>
         <td>Active</td>
-        <td><button>update</button></td>
-        <td><button onclick="myFunction()">delete</button></td>
+        <td><button class="button">update</button></td>
+        <td><button class="button" onclick="myFunction()">delete</button></td>
         <script>
         function myFunction() {
            confirm("warning if you continue all the information will be deleted):");
@@ -75,8 +88,8 @@
         <td>0</td>
         <td>20</td>
         <td>Active</td>
-        <td><button>update</button></td>
-        <td><button onclick="myFunction()">delete</button></td>
+        <td><button class="button">update</button></td>
+        <td><button class="button" onclick="myFunction()">delete</button></td>
         <script>
         function myFunction() {
            confirm("warning if you continue all the information will be deleted):");
@@ -93,8 +106,8 @@
         <td>7</td>
         <td>20</td>
         <td>Active</td>
-        <td><button>update</button></td>
-        <td><button onclick="myFunction()">delete</button></td>
+        <td><button class="button">update</button></td>
+        <td><button class="button" onclick="myFunction()">delete</button></td>
         <script>
         function myFunction() {
            confirm("warning if you continue all the information will be deleted):");
@@ -105,3 +118,6 @@
     </tr>
   </tbody>
 </table>
+<span class="Copyright">Copyright © 2004-2015 Faculty of Computers and Artificial Intelligence 5 Dr. Ahmed Zewail Street,
+  Postal Code: 12613, Orman, Giza, Egypt.</span>
+</html>
