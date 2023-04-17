@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <title>
-        Report
-    </title>
-    <link rel="stylesheet" href="Report.css">
-    </head>
-    <body>
-        <header>
-            <nav class="navbar">
-              <a href="Projects.html"><img src="/images/logo.png" class="logo"></a>
-              <div class="container"><a href="#"></a>
-                <ul>
-                  <li><a href="Home.html">Home</a></li>
-                  <li><a href="AddLab.html">add new lab</a>
-                  <li><a href="updateLab.html"> update & delete</a></li>
-                  <li><a href="PCsList.html">PCsList</a></li>
-                  <li><a href="addPC.html"> Add PC</a></li>
-                  <li><input title="search" type="search" placeholder="search for lab">
-                    <button title="search"
-                      onclick="window.location.href='search.html';" id="sub">search </button></li>
-                </ul>
-              </div>
-            </nav>
-          </header>
-        <form class ="report-lab" action="">
-            <h1>Report a problem</h1>
-            <label for="labid">Laboratory ID:</label> 
-            <input type="text" id="labId" placeholder="Enter laboratory ID" >
-            <label for="pcsNo">Number of PCs that needs a repair:</label>
-            <input type="text" id="pcsNo" placeholder="Enter number of PCs" >
-            <label>Problem description:</label>
-            <input type="text" id="prob" placeholder="Enter problem description">
-            <label>Problem type:</label>
-            <input type="radio" name="problem" value="software" id="software"><label for="software">Software</label>
-            <input type="radio" name="problem" value="hardware" id="hardware"><label for="hardware">Hardware</label><br>
-            <label for="date">Date of occurrance:</label><input type="date" id="date" placeholder="Enter a date" >
-            <br>
-            <input type="submit" value="Submit" id="submit">
-        </form>
-        <span class="Copyright">Copyright © 2004-2015 Faculty of Computers and Artificial Intelligence 5 Dr. Ahmed Zewail Street,
-            Postal Code: 12613, Orman, Giza, Egypt.</span>
-    </body>
+
+<head>
+  <title>
+    Report
+  </title>
+  <link rel="stylesheet" href="Report.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="Projects.html"><img src="/images/logo.png" class="logo"></a>
+      <div class="container"><a href="#"></a>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="AddLab.html">add new lab</a>
+          <li><a href="updateLab.html"> update & delete</a></li>
+          <li><a href="PCsList.html">PCsList</a></li>
+          <li><a href="addPC.html"> Add PC</a></li>
+          <li><input title="search" type="search" placeholder="search for lab">
+            <button title="search" onclick="window.location.href='search.html';" id="sub">search </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <form class="report-lab" action="">
+    <h1>Report a problem</h1>
+    <label for="labid">Laboratory ID:</label>
+    <input type="text" id="labId" placeholder="Enter laboratory ID">
+    <label for="pcsNo">Number of PCs that needs a repair:</label>
+    <input type="text" id="pcsNo" placeholder="Enter number of PCs">
+    <label>Problem description:</label>
+    <input type="text" id="prob" placeholder="Enter problem description">
+    <label>Problem type:</label>
+    <input type="radio" name="problem" value="software" id="software"><label for="software">Software</label>
+    <input type="radio" name="problem" value="hardware" id="hardware"><label for="hardware">Hardware</label><br>
+    <label for="date">Date of occurrance:</label><input type="date" id="date" placeholder="Enter a date">
+    <br>
+    <button onclick="Report()" title="submit"
+    id="submit">Submit </button>
+  </form>
+  <span class="Copyright">Copyright © 2004-2015 Faculty of Computers and Artificial Intelligence 5 Dr. Ahmed Zewail
+    Street,
+    Postal Code: 12613, Orman, Giza, Egypt.</span>
+    <script src="Report.js"></script> 
+</body>
+
 </html>
