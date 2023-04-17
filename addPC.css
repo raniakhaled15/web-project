@@ -141,3 +141,46 @@ input[type="radio"]:first-of-type {
 #reset:hover {
     background-color: #b2b5b5;
 }
+
+table{
+    border-collapse: collapse;
+    width:20%;
+    overflow: auto;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-family: "Cairo", sans-serif;
+    background-color: white;
+    margin-top: 60px;
+
+}
+th{
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    font-size:'meduim';
+    font-family: 'Cairo';
+}
+ td{
+    padding: 1px 15px;
+    height: 70px;
+    font-size: large;
+    font-family: 'Cairo';
+    text-align: center;
+    color: #282A35;
+    
+}
+
+tr{
+    border-bottom: 1px solid #888686 ;
+}
+tr {
+    background-color: #f3f3f3;
+}
+tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}

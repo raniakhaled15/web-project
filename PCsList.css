@@ -82,6 +82,11 @@ body input[type=search] {
 .button:hover{
     background-color: #2e675cd3;
 }
+.my-button {
+    width: 180px;
+    height: 40px;
+    font-size: medium;
+}
 
 .pcs-list {
     border-collapse: collapse;

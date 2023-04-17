@@ -25,17 +25,34 @@
     </nav>
   </header>
         
-        <form class="add-pc" action="" method="get">
-          <h1>Add a PC to a laboratory</h1>
-            <label for="id">PC ID:</label> <input type="text" name="id" id="id" placeholder="Enter PC ID" required>
-            <label for="lab-id">Laboratory ID:</label> <input type="text" name="lab-id" id="lab-id" placeholder="Enter Lab ID" required>
-            <div>
-              <label>Status</label>
-              <input type="radio" name="status" value="active" id="active"><label for="active">Active</label>
-              <input type="radio" name="status" value="under-maintenance" id="under-maintenance"><label for="under maintenance">Under maintenance</label>
-            </div>
-            <input type="submit" value="Sumbit" id="submit"> <input type="reset" value="Reset" id="reset">
-        </form>
+  <div id="pc-table">
+    <form class="add-pc" id="pcs" method="get" >
+        <h1>Add a PC to a laboratory</h1>
+        <label for="id">PC ID:</label>
+        <input type="text" name="id" id="id" placeholder="Enter PC ID" required>
+        <label for="lab-id">Laboratory ID:</label>
+        <input type="text" name="lab" id="lab-id" placeholder="Enter Lab ID" required>
+        <div>
+            <label for="status">Status</label>
+            <input type="radio" name="radio1" value="active" id="active" required><label for="active">Active</label>
+            <input type="radio" name="radio1" value="under-maintenance" id="under_maintenance" required><label for="under_maintenance">Under maintenance</label>
+        </div>
+        <input type="submit" value="Submit" id="submit" onclick="submitForm()"><input type="reset" value="Reset" id="reset">
+    </form>
+  </div>
+  <br>
+  <div id="pc">
+  <br>
+  <table id="my-pc">
+    <tr>
+        <th>PC ID</th>
+        <th>Lab ID</th>
+        <th>PC Status</th>
+    </tr>
+  </table>
+  </div>
+
+  <script src="addPC.js"></script>
         <span class="Copyright">Copyright © 2004-2015 Faculty of Computers and Artificial Intelligence 5 Dr. Ahmed Zewail Street,
           Postal Code: 12613, Orman, Giza, Egypt.</span>
     </body>
